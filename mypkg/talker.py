@@ -10,7 +10,7 @@ n = 0
 def cb():
     global n
     msg = Person()          #変更: Person型のメッセージを作る
-    msg.name = "鈴木太郎"    #変更: msgファイルに書いた「name」
+    msg.name = "本山暖"    #変更: msgファイルに書いた「name」
     msg.age = n % 256       #変更: msgファイルに書いた「age」（0〜255まで）
     pub.publish(msg)
     n += 1
